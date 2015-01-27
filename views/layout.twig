@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ language.language }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}{{ language.title }}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/{{ bower.bootstrap }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+{% block content %}{% endblock %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/{{ bower.jquery }}/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/{{ bower.bootstrap }}/js/bootstrap.min.js"></script>
+</body>
+</html>
