@@ -1,4 +1,5 @@
 "use strict";
+/*global module:false */
 
 /**
  * Initialize the app
