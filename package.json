@@ -1,17 +1,20 @@
 {
     "scripts": {
         "start": "node app.js",
-        "postinstall": "npm run-script bower && npm run-script js && npm run-script less",
+        "postinstall": "npm run-script bower && npm run-script js && npm run-script jsmin && npm run-script css && npm run-script cssmin",
         "bower": "./node_modules/bower/bin/bower install",
         "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
-        "less": "./node_modules/less/bin/lessc ./less/app.less > ./web/css/app.css"
+        "jsmin": "./node_modules/uglify-js/bin/uglifyjs ./web/js/app.js -o ./web/js/app.min.js -m -c",
+        "css": "./node_modules/less/bin/lessc ./less/app.less > ./web/css/app.css",
+        "cssmin": "./node_modules/less/bin/lessc ./less/app.less > ./web/css/app.min.css -x"
     },
     "dependencies": {
-        "dragonnodejs": "^4.0.2",
-        "dragonnodejs-webserver": "^8.0.1",
-        "bower": "^1.3.12",
-        "browserify": "^8.1.3",
-        "less": "^2.3.1"
+        "dragonnodejs": "~3.1.1",
+        "dragonnodejs-webserver": "~8.0.0",
+        "bower": "~1.3.12",
+        "browserify": "~8.1.3",
+        "less": "~2.3.1",
+        "uglify-js": "~2.4.16"
     },
     "repository": {
         "type": "git",
