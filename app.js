@@ -6,8 +6,8 @@
 var config = {
     directory: __dirname + '/modules/',
     modules: {
-        npm: {
-            'dragonnodejs-webserver': {
+        npm: [
+            [require('dragonnodejs-webserver'), {
                 app: {
                     port: process.env.PORT,
                     package: __dirname + '/package.json',
@@ -38,8 +38,8 @@ var config = {
                     path: __dirname + '/languages/'
                 },
                 swig: { views: __dirname + '/views/' }
-            }
-        },
+            }]
+        ],
         directory: {
             app: {},
             homepage: {}
