@@ -23,7 +23,7 @@ var config = {
                     }()
                 },
                 bower: {
-                    libraries: ['jquery', 'bootstrap'],
+                    libraries: ['bootstrap', 'jquery'],
                     path: __dirname + '/'
                 },
                 header: {
