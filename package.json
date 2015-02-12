@@ -1,4 +1,7 @@
 {
+    "name": "dragonnodejs-webserver-skeleton",
+    "version": "1.0.0",
+    "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
     "scripts": {
         "start": "node app.js",
         "postinstall": "npm run-script bower && npm run-script js && npm run-script jsmin && npm run-script css && npm run-script cssmin",
@@ -12,10 +15,14 @@
     "dependencies": {
         "dragonnodejs": "^4.0.2",
         "dragonnodejs-webserver": "^8.0.1",
+        "body-parser": "^1.10.2",
         "bower": "^1.3.12",
         "browserify": "^8.1.3",
+        "connect-flash": "^0.1.1",
+        "cookie-session": "^1.1.0",
         "less": "^2.3.1",
-        "uglify-js": "^2.4.16"
+        "uglify-js": "^2.4.16",
+        "underscore": "^1.7.0"
     },
     "devDependencies": {
         "forever": "^0.14.1"

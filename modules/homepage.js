@@ -2,15 +2,32 @@
 /*global module:false */
 
 /**
- * Serves the homepage
+ * Serves the pages for the application
  * @example
-    homepage: {}
+    homepage: {
+        navigations: [
+            { route: '/', template: 'homepage.twig', name: 'homepage' }
+        ]
+    }
  */
 
 module.exports = function (config, libraries, services) {
-    var app = services.app;
+    var app = services.app,
+        _ = libraries.underscore;
 
-    app.get('/', function (req, res) {
-        res.render('homepage.twig');
+    _.each(config.navigations, function (navigation) {
+        app.get(navigation.route, function (req, res) {
+            if (navigation.redirect) {
+                res.redirect(navigation.redirect);
+            } else {
+                res.render(
+                    navigation.template,
+                    {
+                        active: navigation.name,
+                        navigations: config.navigations
+                    }
+                );
+            }
+        });
     });
 };

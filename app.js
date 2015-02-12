@@ -4,6 +4,12 @@
 // Load the libraries and modules
 
 var config = {
+    libraries: {
+        bodyParser: require('body-parser'),
+        connectFlash: require('connect-flash'),
+        cookieSession: require('cookie-session'),
+        underscore: require('underscore')
+    },
     directory: __dirname + '/modules/',
     modules: {
         npm: [
@@ -41,8 +47,17 @@ var config = {
             }]
         ],
         directory: {
-            app: {},
-            homepage: {}
+            app: function () {
+                if (process.env.SESSION_KEYS) {
+                    return { keys: JSON.parse(process.env.SESSION_KEYS) };
+                }
+                return { keys: ['keys'] };
+            }(),
+            homepage: {
+                navigations: [
+                    { route: '/', template: 'homepage.twig', name: 'homepage' }
+                ]
+            }
         }
     }
 };

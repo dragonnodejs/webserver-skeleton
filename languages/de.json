@@ -1,4 +1,10 @@
 {
     "language": "de",
-    "title": "Webserver Skeleton"
+    "title": "Webserver Skeleton",
+    "navigations": {
+        "homepage": "Startseite"
+    },
+    "alert": {},
+    "imprint": "Impressum",
+    "close": "Schliessen"
 }
