@@ -8,3 +8,6 @@ Description for the application
   * npm install (execute this command always after changes in "less/*" or "js/*")
   * PORT=%PORT% npm run-script forever (forever will automatically restart the app always after changes)
 * Git commit/push into the master after changes
+
+# Demo
+https://webserver-skeleton.herokuapp.com/
