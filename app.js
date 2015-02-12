@@ -55,7 +55,7 @@ var config = {
             }(),
             homepage: {
                 navigations: [
-                    { route: '/', template: 'homepage.twig', name: 'homepage' }
+                    { route: '/', template: 'homepage.twig', name: 'homepage', navigation: true }
                 ]
             }
         }

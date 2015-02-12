@@ -24,9 +24,7 @@
                 {% endfor %}
             </ul>
         </nav>
-        <h3 class="text-muted">
-            <a href="/">{{ language.title }}</a>
-        </h3>
+        <h3 class="text-muted">{{ language.title }}</h3>
     </div>
     {% for level, messages in req.flash() %}
         {% for message in messages %}
