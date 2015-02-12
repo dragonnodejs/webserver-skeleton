@@ -1,6 +1,7 @@
 {
     "language": "en",
     "title": "Webserver Skeleton",
+    "description": "",
     "navigations": {
         "homepage": "Homepage"
     },
