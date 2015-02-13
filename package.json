@@ -1,7 +1,7 @@
 {
     "name": "webserver-skeleton",
-    "version": "1.0.0",
-    "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
+    "version": "1.1.0",
+    "homepage": "https://github.com/dragonnodejs/webserver-skeleton.git",
     "scripts": {
         "start": "node app.js",
         "postinstall": "npm run-script bower && npm run-script js && npm run-script jsmin && npm run-script css && npm run-script cssmin",

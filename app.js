@@ -57,7 +57,8 @@ var config = {
                 navigations: [
                     { route: '/', template: 'homepage.twig', name: 'homepage', navigation: true }
                 ]
-            }
+            },
+            pagenotfound: {}
         }
     }
 };

@@ -3,7 +3,8 @@
     "title": "Webserver Skeleton",
     "description": "",
     "navigations": {
-        "homepage": "Startseite"
+        "homepage": "Startseite",
+        "pagenotfound": "Seite nicht gefunden"
     },
     "alert": {},
     "imprint": "Impressum",

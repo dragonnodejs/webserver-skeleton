@@ -24,11 +24,4 @@ module.exports = function (config, libraries, services) {
         res.locals.req = req;
         next();
     });
-
-    app.use(function (req, res, next) {
-        res.pageNotFound = function (options, fn) {
-            res.status(404).render('404.twig', options, fn);
-        };
-        next();
-    });
 };
