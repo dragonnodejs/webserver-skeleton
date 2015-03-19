@@ -4,7 +4,7 @@
     "homepage": "https://github.com/dragonnodejs/webserver-skeleton.git",
     "scripts": {
         "start": "node app.js",
-        "postinstall": "npm run-script bower && npm run-script js && npm run-script jsmin && npm run-script css && npm run-script cssmin",
+        "postinstall": "npm run bower && npm run js && npm run jsmin && npm run css && npm run cssmin",
         "bower": "./node_modules/bower/bin/bower install",
         "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
         "jsmin": "./node_modules/uglify-js/bin/uglifyjs ./web/js/app.js -o ./web/js/app.min.js -m -c",
