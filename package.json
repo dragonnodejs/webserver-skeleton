@@ -1,27 +1,22 @@
 {
     "name": "webserver-skeleton",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "homepage": "https://github.com/dragonnodejs/webserver-skeleton.git",
     "scripts": {
-        "start": "node app.js",
-        "postinstall": "npm run bower && npm run js && npm run jsmin && npm run css && npm run cssmin",
+        "start": "node cluster.js",
+        "postinstall": "npm run bower",
         "bower": "./node_modules/bower/bin/bower install",
-        "js": "./node_modules/browserify/bin/cmd.js ./js/app.js -o ./web/js/app.js",
-        "jsmin": "./node_modules/uglify-js/bin/uglifyjs ./web/js/app.js -o ./web/js/app.min.js -m -c",
-        "css": "./node_modules/less/bin/lessc ./less/app.less > ./web/css/app.css",
-        "cssmin": "./node_modules/less/bin/lessc ./less/app.less > ./web/css/app.min.css -x",
         "forever": "./node_modules/forever/bin/forever -w app.js"
     },
     "dependencies": {
         "dragonnodejs": "^4.0.4",
-        "dragonnodejs-webserver": "^8.0.1",
+        "dragonnodejs-express": "^2.1.1",
+        "dragonnodejs-webserver": "^9.0.0",
         "body-parser": "^1.10.2",
         "bower": "^1.3.12",
-        "browserify": "^8.1.3",
         "connect-flash": "^0.1.1",
         "cookie-session": "^1.1.0",
-        "less": "^2.3.1",
-        "uglify-js": "^2.4.16",
+        "throng": "^1.0.0",
         "underscore": "^1.7.0"
     },
     "devDependencies": {
