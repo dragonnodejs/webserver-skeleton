@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Page not found function and handler for all routes which are not handled
