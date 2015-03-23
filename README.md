@@ -8,5 +8,8 @@
   - PORT=%PORT% npm run nodemon
 - Git commit/push into the master after changes
 
+## Production
+- Set environment variable "NODE_ENV" to "production" to enable cache for swig templates and language data  
+
 ## Try it online
 https://webserver-skeleton.herokuapp.com/
