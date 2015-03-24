@@ -3,7 +3,7 @@
 ## Development
 - Install [Node.js](http://nodejs.org/)
 - Git clone the repository [dragonnodejs/webserver-skeleton](https://github.com/dragonnodejs/webserver-skeleton.git)
-- Switch to the working directory of the cloned repository and executes:
+- Open terminal, switch to the directory and execute:
   - npm install
   - PORT=%PORT% npm run nodemon
 - Git commit/push into the master after changes
