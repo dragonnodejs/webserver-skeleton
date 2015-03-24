@@ -11,7 +11,7 @@ module.exports = function (config, libraries, services) {
 
     app.use(function (req, res, next) {
         res.pageNotFound = function () {
-            res.status(404).render('404.twig', { active: 'pagenotfound' });
+            res.status(404).render('404.html.twig', { active: 'pagenotfound' });
         };
         next();
     });

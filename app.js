@@ -66,7 +66,7 @@ var config = {
             }(),
             homepage: {
                 navigations: [
-                    { route: '/', template: 'homepage.twig', name: 'homepage', navigation: true }
+                    { route: '/', template: 'homepage.html.twig', name: 'homepage', navigation: true }
                 ]
             },
             pagenotfound: {}

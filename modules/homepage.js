@@ -5,7 +5,7 @@
  * @example
     homepage: {
         navigations: [
-            { route: '/', template: 'homepage.twig', name: 'homepage' }
+            { route: '/', template: 'homepage.html.twig', name: 'homepage' }
         ]
     }
  */
