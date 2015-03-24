@@ -1,7 +1,7 @@
 {
     "name": "webserver-skeleton",
     "version": "1.0.0",
-    "homepage": "https://github.com/dragonnodejs/webserver-skeleton.git",
+    "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
     "scripts": {
         "start": "node cluster.js",
         "postinstall": "npm run bower",
