@@ -6,7 +6,7 @@
         "start": "node cluster.js",
         "postinstall": "npm run bower",
         "bower": "./node_modules/bower/bin/bower install",
-        "nodemon": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
+        "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
         "test": "mocha -R spec"
     },
     "dependencies": {
