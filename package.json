@@ -3,9 +3,11 @@
     "version": "1.0.0",
     "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
     "scripts": {
-        "start": "node cluster.js",
-        "postinstall": "npm run bower",
+        "postinstall": "npm run bower && npm run css && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
+        "css": "./node_modules/minifier/index.js ./web/css/app.css",
+        "js": "./node_modules/minifier/index.js ./web/js/app.js",
+        "start": "node cluster.js",
         "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
         "test": "mocha -R spec"
     },
@@ -17,6 +19,7 @@
         "bower": "^1.3.12",
         "connect-flash": "^0.1.1",
         "cookie-session": "^1.1.0",
+        "minifier": "^0.6.2",
         "newrelic": "^1.15.1",
         "throng": "^1.0.0",
         "underscore": "^1.7.0"
