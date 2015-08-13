@@ -1,7 +1,10 @@
 {
     "name": "webserver-skeleton",
+    "description": "Skeleton for a webserver application with serverside template rendering",
     "version": "1.0.0",
     "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
+    "license": "MIT",
+    "readmeFilename": "README.md",
     "scripts": {
         "postinstall": "npm run bower && npm run css && npm run js",
         "bower": "./node_modules/bower/bin/bower install",
