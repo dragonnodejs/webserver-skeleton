@@ -4,8 +4,11 @@
 - Install [Node.js](http://nodejs.org/)
 - Git clone the repository [dragonnodejs/webserver-skeleton](https://github.com/dragonnodejs/webserver-skeleton.git)
 - Open terminal, switch to the directory and execute:
-  - npm install
-  - PORT=%PORT% npm run start-watch
+
+    ```npm install```
+
+    ```PORT=%PORT% npm run start-watch```
+
 - Git commit/push into the master after changes
 
 ## Production
