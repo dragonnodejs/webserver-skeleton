@@ -5,13 +5,14 @@
     "homepage": "http://github.com/dragonnodejs/webserver-skeleton",
     "license": "MIT",
     "readmeFilename": "README.md",
+    "main": "app.js",
     "scripts": {
         "postinstall": "npm run bower && npm run css && npm run js",
-        "bower": "./node_modules/bower/bin/bower install",
-        "css": "./node_modules/minifier/index.js ./web/css/app.css",
-        "js": "./node_modules/minifier/index.js ./web/js/app.js",
+        "bower": "bower install",
+        "css": "minify ./web/css/app.css",
+        "js": "minify ./web/js/app.js",
         "start": "node cluster.js",
-        "start-watch": "./node_modules/nodemon/bin/nodemon.js --watch app.js --watch modules app.js",
+        "start-watch": "nodemon --watch modules app.js",
         "test": "mocha -R spec"
     },
     "dependencies": {
